@@ -1,3 +1,5 @@
+# Cash Bid Prices
+
 ## Overview
 
 This is a simple Next.js app that allows farmers to search for grain bid prices.
