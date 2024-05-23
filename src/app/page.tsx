@@ -112,7 +112,8 @@ export default function Component() {
       </main>
       <footer className="bg-gray-900 text-white py-4 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          © 2023 Grain Bid Prices. All rights reserved.
+          © {new Date().getFullYear()} Grain Bid Prices. All rights reserved.
+          CashBidPrices.com
         </div>
       </footer>
     </div>
