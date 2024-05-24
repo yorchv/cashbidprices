@@ -3,6 +3,7 @@
 
 import { Newsreader } from "next/font/google";
 import { Space_Mono } from "next/font/google";
+import { CSPostHogProvider } from "../components/utils/posthog";
 import "./globals.css";
 
 export const metadata = {
@@ -27,9 +28,11 @@ const space_mono = Space_Mono({
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={newsreader.variable + " " + space_mono.variable}>
-        {children}
-      </body>
+      <CSPostHogProvider>
+        <body className={newsreader.variable + " " + space_mono.variable}>
+          {children}
+        </body>
+      </CSPostHogProvider>
     </html>
   );
 }
